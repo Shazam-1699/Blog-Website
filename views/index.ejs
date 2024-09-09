@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Shazam Blogs</title>
+</head>
+<body>
+    <%- include("partial/header.ejs") %>
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="Imgs/S.jpg" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold text-body-emphasis">Ready to Dive In?</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Whether you're here to start your own blog or explore what others have shared, you're in the right place!</p>
+          <p class="lead mb-4">Got ideas, stories, or insights to share with the world? Start crafting your blog and make your voice heard.</p>
+          <p class="lead mb-4">Looking for inspiration or just want to discover something new? Explore our collection of unique perspectives, stories, and expert knowledge.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="/create"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Create Your Own Blog</button></a>
+            <a href="/browse"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Browse Existing Blogs</button></a>
+          </div>
+          <h2 class="display-10 fw-italic text-body-emphasis py-4">Your journey begins here—choose your path!</h2>
+        </div>
+      </div>
+    <%- include("partial/footer.ejs") %>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Shazam Blogs</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="d-block mx-auto mb-0" src="Imgs/S.jpg" alt="" width="72" height="57">
+            <span class="fs-4">Shazam Blogs</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/create" class="nav-link">Create Blog</a></li>
+            <li class="nav-item"><a href="/browse" class="nav-link">Browse Blogs</a></li>
+            <li class="nav-item"><a href="/search" class="nav-link active">Search Blog</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+          </ul>
+        </header>
+    
+        <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                  <h1 class="modal-title fs-5">Successfull</h1>
+                  <a href="/"></a><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-0">
+                  <p>Changes made Successfully.</p>
+                </div>
+                <div class="modal-footer flex-row align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                  <a href="/"><button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Home</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <%- include("partial/footer.ejs") %>
+</body>
+</html>
